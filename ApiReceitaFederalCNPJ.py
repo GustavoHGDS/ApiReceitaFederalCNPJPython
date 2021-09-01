@@ -15,7 +15,6 @@ while rodando:
 
             data = requests.get(url)
 
-
             teste = json.loads(data.text)
             for test in teste['atividade_principal']:
                 print(test['text'], ' | Cnae:', test['code'], '\n')
